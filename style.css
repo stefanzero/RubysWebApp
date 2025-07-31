@@ -6,15 +6,35 @@ h2 {
   font-size: 100%;
 }
 
-.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* FIND A WAY TO MAKE ALL LINKS SAME COLOR */
+link:hover {
+  font-color: white;
 }
 
+/* navigation bar */
+.navbar {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+/* accessible for phones */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+/* each menu dropdown */
 .dropdown {
+  list-style-type: none;
   position: relative;
   display: inline-block;
+  background-color: blue;
 }
 
 .dd-link {
@@ -23,10 +43,14 @@ h2 {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
+  padding: 20px 16px;
   z-index: 1;
 }
 
 .dropdown:hover .dd-link {
   display: block;
+}
+
+li {
+  padding: 10px 5px 10px 0px;
 }
