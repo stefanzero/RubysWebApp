@@ -34,7 +34,7 @@ link:hover {
   list-style-type: none;
   position: relative;
   display: inline-block;
-  background-color: blue;
+  background-color: gray;
 }
 
 .dd-link {
