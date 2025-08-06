@@ -1,26 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Reference Hub</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <p>
       <h1>Welcome to the Artist Reference Hub.</h1>
       <hr />
-      This is simply an organized way to find all the generators, picture hubs,
-      and other links I have collected over the years but forget about.
-	  </p>
+      <p>
+        This is simply an organized way to find all the generators, picture
+        hubs, and other links I have collected over the years but forget about.
+      </p>
     </header>
     <nav>
       <div class="navbar">
         <menu class="dropdown">
           <li><a href="drawing.html">Drawing</a></li>
           <div class="dd-link">
-            <li><a href="">Artist's Pages</a></li>
+            <!-- <li><a href="">Artist's Pages</a></li> -->
+            <li>
+              <a href="./index.html?subject=drawing&category=artist"
+                >Artist's Pages</a
+              >
+            </li>
             <li><a href="">Assets (CSP)</a></li>
             <li><a href="">Figure and Pose Models</a></li>
             <li><a href="">Photography</a></li>
@@ -43,13 +54,19 @@
       </div>
     </nav>
     <main>
-		<!-- javascript call for list view -->
-      <div class="container-fluid tables">
+      <!-- javascript call for list view -->
+      <div id="container" class="container-fluid tables">
         <div class="" id="Data"></div>
       </div>
-	</main>
+    </main>
     <footer></footer>
-	<script
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
